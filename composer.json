@@ -1,0 +1,22 @@
+{
+    "name": "paulannekov/clean-css",
+    "description": "CSS unused rules cleaner",
+    "require": {
+        "sabberworm/php-css-parser": "5.0.8",
+        "sunra/php-simple-html-dom-parser": "v1.5.0",
+        "wikidi/net_url2": "2.0.0"
+    },
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Paul Annekov",
+            "email": "paul.annekov@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-0": {
+            "CleanCss\\": "src/"
+        }
+    }
+}
