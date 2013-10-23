@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by JetBrains PhpStorm.
- * User: steelrat
- * Date: 10/22/13
- * Time: 1:07 AM
- * To change this template use File | Settings | File Templates.
- */
 
 namespace CleanCss;
 
