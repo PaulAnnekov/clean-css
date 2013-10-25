@@ -14,7 +14,7 @@
                 "reference": "8457832af1310d5f58285c475609c5a064f68a9b"
             },
             "dist": {
-                "type": "zip",
+                "type": "zip"
                 "url": "https://api.github.com/repos/sabberworm/PHP-CSS-Parser/zipball/8457832af1310d5f58285c475609c5a064f68a9b",
                 "reference": "8457832af1310d5f58285c475609c5a064f68a9b",
                 "shasum": ""
