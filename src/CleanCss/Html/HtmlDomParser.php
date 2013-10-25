@@ -2,14 +2,24 @@
 
 namespace CleanCss\Html;
 
-class HtmlDomParser implements FinderInterface {
+class HtmlDomParser implements ReaderInterface {
 	private $html;
 
-	function __construct() {
-		$this->html = new \Sunra\PhpSimple\HtmlDomParser();
+	function __construct($url) {
+		$this->html = \Sunra\PhpSimple\HtmlDomParser::file_get_html($url);
 	}
 
-	function find($selector) {
-		return $this->html->find($selector);
+	function isExists($selector) {
+		return count($this->html->find($selector)) > 0;
+	}
+
+	function findCssFiles() {
+		$tags = $this->html->find('link[rel="stylesheet"]');
+		$cssFiles = array();
+		foreach ($tags as $tag) {
+			$cssFiles[]=$tag->href;
+		}
+
+		return $cssFiles;
 	}
 }

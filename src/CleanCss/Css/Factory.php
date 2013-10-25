@@ -4,7 +4,14 @@ namespace CleanCss\Css;
 
 
 class Factory {
-	public static function factory($class) {
-		return new $class;
+	/**
+	 * @param $class
+	 * @param $url
+	 * @return ReaderInterface
+	 */
+	public static function factory($class, $url) {
+		$class = '\\' . __NAMESPACE__ . '\\' . $class;
+
+		return new $class($url);
 	}
 }

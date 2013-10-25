@@ -4,5 +4,6 @@ namespace CleanCss\Css;
 
 
 interface ReaderInterface {
-	function getRules();
+	function __construct($url);
+	function getSelectors();
 }

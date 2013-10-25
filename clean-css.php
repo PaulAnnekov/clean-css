@@ -8,3 +8,4 @@ if (count($argv) < 2) {
 
 $cleanCss = new \CleanCss\CleanCss();
 $cleanCss->checkUrl($argv[1]);
+$cleanCss->printUnused();
