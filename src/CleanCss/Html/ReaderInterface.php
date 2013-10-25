@@ -7,4 +7,5 @@ interface ReaderInterface {
 	function __construct($url);
 	function isExists($selector);
 	function findCssFiles();
+	function findPageUrls();
 }

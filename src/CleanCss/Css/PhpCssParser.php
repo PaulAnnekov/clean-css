@@ -21,11 +21,12 @@ class PhpCssParser implements ReaderInterface {
 		foreach ($blocks as $block) {
 			/** @var DeclarationBlock $block */
 			$blockSelectors = array();
+			// TODO: PhpCssParser parses comments unproperly and they may be contained in selectors. Need to check.
 			foreach ($block->getSelectors() as $selector) {
 				/** @var Selector $selector */
 				$blockSelectors[] = $selector->getSelector();
 			}
-			$selectors[] = $blockSelectors;
+			$selectors[implode(', ', $blockSelectors)] = $blockSelectors;
 		}
 
 		return $selectors;

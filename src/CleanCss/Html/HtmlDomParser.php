@@ -22,4 +22,14 @@ class HtmlDomParser implements ReaderInterface {
 
 		return $cssFiles;
 	}
+
+	function findPageUrls() {
+		$tags = $this->html->find('a');
+		$pageUrls = array();
+		foreach ($tags as $tag) {
+			$pageUrls[]=$tag->href;
+		}
+
+		return $pageUrls;
+	}
 }

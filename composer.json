@@ -2,7 +2,7 @@
     "name": "paulannekov/clean-css",
     "description": "Detects unused CSS rules on site pages",
     "require": {
-        "sabberworm/php-css-parser": "5.0.8",
+        "sabberworm/php-css-parser": ">=5.0.8",
         "sunra/php-simple-html-dom-parser": "v1.5.0",
         "wikidi/net_url2": "2.0.0"
     },
