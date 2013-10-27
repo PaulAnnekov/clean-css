@@ -19,7 +19,6 @@ if (count($argv) < 3) {
 }
 
 $options = getopt('l:m:ps');
-var_dump($options);
 
 $cleanCss = new \CleanCss\CleanCss();
 if (isset($options['s'])) {
@@ -36,3 +35,5 @@ if (isset($options['s'])) {
 } else {
 	$cleanCss->checkUrls(array_splice($argv, 2));
 }
+
+$cleanCss->printUnused();

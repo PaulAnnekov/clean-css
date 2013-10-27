@@ -3,20 +3,20 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "bf18e6d7e32c708e6158525fa5451059",
+    "hash": "f4eebd6a7861c6727dd23fae261a58b4",
     "packages": [
         {
             "name": "sabberworm/php-css-parser",
-            "version": "5.0.8",
+            "version": "5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sabberworm/PHP-CSS-Parser.git",
-                "reference": "8457832af1310d5f58285c475609c5a064f68a9b"
+                "reference": "8cd4f402a0c7d8933c919c82bcebaaad30f686eb"
             },
             "dist": {
-                "type": "zip"
-                "url": "https://api.github.com/repos/sabberworm/PHP-CSS-Parser/zipball/8457832af1310d5f58285c475609c5a064f68a9b",
-                "reference": "8457832af1310d5f58285c475609c5a064f68a9b",
+                "type": "zip",
+                "url": "https://api.github.com/repos/sabberworm/PHP-CSS-Parser/zipball/8cd4f402a0c7d8933c919c82bcebaaad30f686eb",
+                "reference": "8cd4f402a0c7d8933c919c82bcebaaad30f686eb",
                 "shasum": ""
             },
             "require": {
@@ -44,7 +44,7 @@
                 "parser",
                 "stylesheet"
             ],
-            "time": "2013-08-15 15:10:29"
+            "time": "2013-10-23 22:25:07"
         },
         {
             "name": "sunra/php-simple-html-dom-parser",

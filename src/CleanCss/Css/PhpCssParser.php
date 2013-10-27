@@ -6,7 +6,13 @@ use \Sabberworm\CSS\Parser;
 use \Sabberworm\CSS\RuleSet\DeclarationBlock;
 use \Sabberworm\CSS\Property\Selector;
 
-class PhpCssParser implements ReaderInterface {
+/**
+ * Class PhpCssParser reads CSS file using PHP CSS Parser library.
+ *
+ * @package CleanCss\CSS
+ * @see https://github.com/sabberworm/PHP-CSS-Parser
+ */
+class PhpCssParser extends ReaderAbstract {
 	private $css;
 
 	function __construct($url) {
@@ -15,13 +21,12 @@ class PhpCssParser implements ReaderInterface {
 		$this->css = $parser->parse();
 	}
 
-	function getSelectors() {
+	function _getSelectors() {
 		$selectors = array();
 		$blocks = $this->css->getAllDeclarationBlocks();
 		foreach ($blocks as $block) {
 			/** @var DeclarationBlock $block */
 			$blockSelectors = array();
-			// TODO: PhpCssParser parses comments unproperly and they may be contained in selectors. Need to check.
 			foreach ($block->getSelectors() as $selector) {
 				/** @var Selector $selector */
 				$blockSelectors[] = $selector->getSelector();

@@ -5,9 +5,11 @@ namespace CleanCss\Html;
 
 class Factory {
 	/**
-	 * @param $class
-	 * @param $url
-	 * @return ReaderInterface
+	 * Gets ReaderInterface instance object.
+	 *
+	 * @param string $class ReaderInterface instance name.
+	 * @param string $url Page url to parse.
+	 * @return ReaderInterface Instance object.
 	 */
 	public static function factory($class, $url) {
 		$class = '\\' . __NAMESPACE__ . '\\' . $class;

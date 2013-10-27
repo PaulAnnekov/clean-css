@@ -2,6 +2,12 @@
 
 namespace CleanCss\Html;
 
+/**
+ * Class HtmlDomParser reads HTML file using PHP Simple HTML DOM Parser library.
+ *
+ * @package CleanCss\Html
+ * @see http://sourceforge.net/projects/simplehtmldom/
+ */
 class HtmlDomParser implements ReaderInterface {
 	private $html;
 
